@@ -5,14 +5,6 @@ CREATE TABLE restaurants (
     phone VARCHAR(20)
 );
 
-CREATE TABLE menu_items (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(100),
-    price NUMERIC(6,2),
-    available BOOLEAN DEFAULT true,
-    restaurant_id INT REFERENCES restaurants(id)
-);
-
 CREATE TABLE customers (
     id SERIAL PRIMARY KEY,
     name VARCHAR(200) NOT NULL,
@@ -25,6 +17,16 @@ CREATE TABLE orders (
     restaurant_id INT REFERENCES restaurants(id) ON DELETE SET NULL,
     status VARCHAR(20) DEFAULT 'pending'  --  'pending', 'completed',cancel...
 );
+
+CREATE TABLE menu_items (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    price NUMERIC(6,2),
+    available BOOLEAN DEFAULT true,
+    restaurant_id INT REFERENCES restaurants(id)
+);
+
+
 
 CREATE TABLE order_items (
     id SERIAL PRIMARY KEY,
