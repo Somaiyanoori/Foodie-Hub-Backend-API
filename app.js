@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import restaurantRoutes from "./routes/restaurantRoutes.js";
+import menuRoutes from "./routes/menuRoutes.js";
 dotenv.config();
 //EXPRESS
 const app = express();
@@ -13,6 +14,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/restaurants", restaurantRoutes);
+app.use("/api", menuRoutes);
 
 app.listen(PORT, () => {
   console.log(`server is running on this PORT ${PORT}`);

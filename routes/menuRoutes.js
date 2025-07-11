@@ -1,6 +1,6 @@
 import express from "express";
 import {
-  getRestaurantMenu,
+  getMenu,
   createMenuItem,
   editMenuItem,
   removeMenuItem,
@@ -10,7 +10,7 @@ import {
 const router = express.Router();
 
 //  all menu items
-router.get("/restaurants/:id/menu", getRestaurantMenu);
+router.get("/restaurants/:id/menu", getMenu);
 
 // new menu item
 router.post("/restaurants/:id/menu", createMenuItem);

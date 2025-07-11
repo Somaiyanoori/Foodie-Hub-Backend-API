@@ -27,6 +27,7 @@ export const createMenuItem = async (req, res) => {
     });
     res.status(201).json(newItem);
   } catch (error) {
+    console.log(error);
     res.status(500).json({ error: "Failed to create menu item" });
   }
 };
