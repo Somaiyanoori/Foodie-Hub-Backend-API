@@ -49,7 +49,7 @@ Foodie Hub is a public food ordering system built with Node.js, Express, and Pos
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 .
 ├── controllers/
@@ -77,7 +77,7 @@ Foodie Hub is a public food ordering system built with Node.js, Express, and Pos
 
 ---
 
-## ⚙️ Getting Started
+## Getting Started
 
 ### 1. Clone the repo
 
@@ -101,16 +101,16 @@ Server will run at: http://localhost:3008
 
 ---
 
-## 🧪 API Endpoints
+## API Endpoints
 
-### 📦 Restaurants
+### Restaurants
 
 GET /restaurants
 POST /restaurants
 PUT /restaurants/:id
 DELETE /restaurants/:id
 
-### 🍕 Menu Items
+### Menu Items
 
 GET /menu-items/restaurant/:restaurantId
 POST /menu-items
@@ -118,14 +118,14 @@ PUT /menu-items/:id
 PATCH /menu-items/:id/availability
 DELETE /menu-items/:id
 
-### 👤 Customers
+### Customers
 
 GET /customers
 POST /customers
 PUT /customers/:id
 DELETE /customers/:id
 
-### 🛒 Orders
+### Orders
 
 GET /orders
 POST /orders
@@ -143,7 +143,7 @@ DELETE /orders/:id
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 Made with Somaiya Noori  
 A passionate full stack learner building real-world projects with Node.js & PostgreSQL.
