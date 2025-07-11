@@ -6,11 +6,13 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3008;
 
-app.use("/api/restaurants", restaurantRoutes);
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Foodie Hub API is running...");
 });
+
+app.use("/api/restaurants", restaurantRoutes);
 
 app.listen(PORT, () => {
   console.log(`server is running on this PORT ${PORT}`);
