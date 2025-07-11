@@ -5,7 +5,8 @@ import {
   addRestaurant,
   editRestaurant,
   removeRestaurant,
-} from "../controllers/restaurantController";
+} from "../controllers/restaurantController.js";
+
 const router = express.Router();
 //all show restaurant
 router.get("/", getRestaurants);
