@@ -1,6 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
-
+import restaurantRoutes from "./routes/restaurantRoutes.js";
 dotenv.config();
 //EXPRESS
 const app = express();
